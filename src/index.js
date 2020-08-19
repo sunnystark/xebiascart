@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {Provider} from 'react-redux';
+
 import App from './App';
+import store from './store/configureStore';
 import * as serviceWorker from './serviceWorker';
+
+import './index.css';
+import { loadProducts } from './actions/productActions';
+import { loadFilters } from './actions/filterActions';
+
+store.dispatch(loadProducts());
+store.dispatch(loadFilters());
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
