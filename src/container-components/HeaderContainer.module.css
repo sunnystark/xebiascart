@@ -1,0 +1,61 @@
+.logo {
+  width: 9rem;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.left {
+  flex-grow: 0;
+}
+
+.center {
+  flex-grow: 4;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  flex-grow: 0;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 1rem;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.35em 0.75em;
+  text-decoration: none;
+  line-height: normal;
+  max-height: 3em;
+  width: 60%;
+  font-size:1rem;
+  letter-spacing: 0; 
+}
+
+
+.search-button {
+  max-height: 3em;
+  font-size:0.8rem;
+  letter-spacing: 0.1rem;  
+  text-transform: uppercase;
+  border-radius: 0;
+  background: #000;
+  color: rgb(238, 237, 237);
+  border: none;
+  padding: 0.25em 0.75em;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
