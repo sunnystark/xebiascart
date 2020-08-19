@@ -1,0 +1,12 @@
+.color {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 5px 10px 5px 0;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+}
+
+.mark {
+  border: #8b8d1a;
+  border-style: double;
+}

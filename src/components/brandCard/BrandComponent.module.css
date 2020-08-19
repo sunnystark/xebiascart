@@ -1,0 +1,16 @@
+.container {
+  margin-right: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.container input {
+  margin-right: 5px;
+}
+.container label {
+  white-space: nowrap; 
+  width: 85%; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  display: inline-block;
+}
