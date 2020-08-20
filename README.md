@@ -2,31 +2,31 @@
 <h2>STEP-1 npm install</h2>
 <p><<b>##########</b></p>
 
-if error given 
+<p>if error given 
 There might be a problem with the project dependency tree.
-It is likely not a bug in Create React App, but something you need to fix locally.
+It is likely not a bug in Create React App, but something you need to fix locally.</p>
 
-The react-scripts package provided by Create React App requires a dependency:
+<p>The react-scripts package provided by Create React App requires a dependency:</p>
 
   "babel-eslint": "10.1.0"
 
-Don't try to install it manually: your package manager does it automatically.
-However, a different version of babel-eslint was detected higher up in the tree:
+<p>Don't try to install it manually: your package manager does it automatically.
+However, a different version of babel-eslint was detected higher up in the tree:</p>
 
   C:\Users\hp\Downloads\node_modules\babel-eslint (version: 7.2.3)
 
-Manually installing incompatible versions is known to cause hard-to-debug issues.
+<p>Manually installing incompatible versions is known to cause hard-to-debug issues.</p>
 
 
-####################
+<b>####################</b>
 
 Paste these line inside your .env file 
 
 SKIP_PREFLIGHT_CHECK=true
 
-##########
-STEP-1 npm start
-##########
+<p><b>##########</b></p>
+<h2>STEP-2 npm start</h2>
+<p><b>##########</b></p>
 
 :) 
 
