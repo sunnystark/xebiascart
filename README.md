@@ -1,7 +1,8 @@
-##########
-STEP-1 npm install
-##########
-if given error 
+<p><b>##########</b></p>
+<h2>STEP-1 npm install</h2>
+<p><<b>##########</b></p>
+
+if error given 
 There might be a problem with the project dependency tree.
 It is likely not a bug in Create React App, but something you need to fix locally.
 
@@ -43,12 +44,12 @@ getting filter data
 
 
 <h2>Pending</h2>
-Login functionality
-Cart functionality
-Code review and removal of redundant component code.
-Enabling 'flow' on individual files
-Search functionality
-UI (hover states), loading indications.
+<p>Login functionality</p>
+<p>Cart functionality</p>
+<p>Code review and removal of redundant component code.</p>
+<p>Enabling 'flow' on individual files</p>
+<p>Search functionality</p>
+<p>UI (hover states), loading indications.</p>
 
 Test
 $ npm test
