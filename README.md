@@ -1,5 +1,5 @@
 ##########
-STEP-1 npm start
+STEP-1 npm install
 ##########
 if given error 
 There might be a problem with the project dependency tree.
@@ -28,6 +28,9 @@ and paste this one
 
 SKIP_PREFLIGHT_CHECK=true
 
+##########
+STEP-1 npm start
+##########
 
 :) 
 
@@ -40,3 +43,36 @@ getting all raw Data
 getting filter data 
 
 ![alt text](src/assets/2.png)
+
+
+Pending
+Login functionality
+Cart functionality
+Code review and removal of redundant component code.
+Enabling 'flow' on individual files
+Search functionality
+UI (hover states), loading indications.
+
+Test
+$ npm test
+Debug Test
+$ npm run test:debug
+Coverage
+$ npm test -- --coverage
+Analyzing the Bundle Size
+$ npm run build
+$ npm run analyze
+Check type error
+$ npm run flow
+
+
+Server API
+API to use
+
+GET Product Listing: https://xebiascart.herokuapp.com/products
+
+Product Search by name: https://xebiascart.herokuapp.com/products?title=provogue
+
+GET Product Filters: https://xebiascart.herokuapp.com/filters
+
+User Login: https://xebiascart.herokuapp.com/users?username=amigo
