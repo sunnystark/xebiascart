@@ -20,9 +20,7 @@ Manually installing incompatible versions is known to cause hard-to-debug issues
 
 ####################
 
-create .env file 
-
-and paste this one 
+Paste these line inside your .env file 
 
 SKIP_PREFLIGHT_CHECK=true
 
