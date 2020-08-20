@@ -33,6 +33,10 @@ SKIP_PREFLIGHT_CHECK=true
 
 ScreenShot
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+getting all raw Data 
 
 ![alt text](src/assets/1.png)
+
+getting filter data 
+
+![alt text](src/assets/2.png)
