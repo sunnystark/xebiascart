@@ -44,7 +44,9 @@ function rowContainer(items, handleChange, selectedBrands){
 function BrandCard(props) {
   return (
     <div className={styles.container}>
-      <h3>Brand</h3>
+      <h3>Brand </h3>
+      <br/>
+      <hr/>
       <div style={{ width: '100%', height: '10rem' }}>
       <InfiniteLoading
         itemHeight={40}

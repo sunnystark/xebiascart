@@ -9,7 +9,10 @@ function PriceCard(props) {
   const maxValues = [selectOption, ...priceRangeClone.slice(1)];
   return (
     <div className={styles.container}>
+      <br/>
       <h3>Price</h3>
+      <br/>
+      <hr/>
       <div className={styles.options}>
         <div style={{display:'inline-block', marginRight:'1rem'}}>
           <span>min: </span>

@@ -11,6 +11,8 @@ function ColorCard({
   return (
     <div className={styles.container}>
       <h3>Color</h3>
+      <br/>
+      <hr/>
         {
           values.map(colorMeta => (
               <Color

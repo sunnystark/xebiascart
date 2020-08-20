@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ProductCard.module.css'
 import ColorComponent from '../colorCard/ColorComponent';
+// import InfiniteLoading from 'react-simple-infinite-loading';
 
 function ProductCard(props) {
   return (
