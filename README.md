@@ -16,9 +16,6 @@ However, a different version of babel-eslint was detected higher up in the tree:
 
 Manually installing incompatible versions is known to cause hard-to-debug issues.
 
-If you would prefer to ignore this check, add SKIP_PREFLIGHT_CHECK=true to an .env file in your project.
-That will permanently disable this message but you might encounter other issues.
-
 
 ####################
 
@@ -45,7 +42,7 @@ getting filter data
 ![alt text](src/assets/2.png)
 
 
-Pending
+<h2>Pending</h2>
 Login functionality
 Cart functionality
 Code review and removal of redundant component code.
