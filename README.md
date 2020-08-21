@@ -71,3 +71,56 @@ Product Search by name: https://xebiascart.herokuapp.com/products?title=provogue
 GET Product Filters: https://xebiascart.herokuapp.com/filters
 
 User Login: https://xebiascart.herokuapp.com/users?username=amigo
+
+{
+  "filterable_product_list": {
+    "filterable_products": {
+      "product_id": {
+        "id": "product_id",
+        "colour": {
+          "color": "#FFD700",
+          "title": "Gold"
+        },
+        "brand": "nike",
+        "discount": 50,
+        "rating": 4,
+        "image": "",
+        "price": {
+          "mrp": 2299,
+          "final_price": 1149
+        },
+        "title": ""
+      }
+    },
+    "products_searchable_criteria":{
+      "brand":{
+        "nike":["product_id"]
+      },
+      "color":{
+        "#FFD700":["product_id"]
+      }
+    },
+  },
+  "filter": {
+    "applied_filters":{ "brand":[], "color":[], "price":[] "discount":[]},
+    "filter_list":[
+      {
+        "type": "BRAND",
+        "values": [ { "title": "",  "value": "" } ]
+      },
+      {
+        "type": "PRICE",
+        "values": [ { "displayValue": "Min", "key": "Min" } ]
+      },
+      {
+        "type": "COLOUR",
+        "values": [ { "color": "#F5F5DC", "title": "Beige" } ]
+      },
+      {
+        "type": "DISCOUNT",
+        "values": [ { "displayValue": "Min", "key": "Min" } ]
+      },
+    ]
+  },
+  "products_list":[]
+}
