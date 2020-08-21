@@ -44,6 +44,18 @@ export const addMaxPriceToFilter = (max) => ({type:ADD_MAX_PRICE_TO_FILTER, payl
 export const REMOVE_MAX_PRICE_FROM_FILTER = 'remove_max_price_from_filter';
 export const removeMaxPriceFromFilter = (max) => ({type:REMOVE_MAX_PRICE_FROM_FILTER, payload:max});
 
+export const ADD_MIN_DISCOUNT_TO_FILTER = 'add_min_discount_to_filter';
+export const addMinDiscountToFilter = (min) => ({type:ADD_MIN_DISCOUNT_TO_FILTER, payload:min});
+
+export const REMOVE_MIN_DISCOUNT_FROM_FILTER = 'remove_min_discount_from_filter';
+export const removeMinDiscountFromFilter = (min) => ({type:REMOVE_MIN_DISCOUNT_FROM_FILTER, payload:min});
+
+export const ADD_MAX_DISCOUNT_TO_FILTER = 'add_max_discount_to_filter';
+export const addMaxDiscountToFilter = (max) => ({type:ADD_MAX_DISCOUNT_TO_FILTER, payload:max});
+
+export const REMOVE_MAX_DISCOUNT_FROM_FILTER = 'remove_max_discount_from_filter';
+export const removeMaxDiscountFromFilter = (max) => ({type:REMOVE_MAX_DISCOUNT_FROM_FILTER, payload:max});
+
 
 export const RESET_APPLIED_FILTER = 'reset_applied_filter';
-export const resetAppliedFilter = () => ({type:RESET_APPLIED_FILTER});
+export const resetAppliedFilter = () => ({type:RESET_APPLIED_FILTER});  

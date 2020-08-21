@@ -4,9 +4,9 @@ import styles from './DiscountCard.module.css'
 
 function DiscountCard(props) {
   const selectOption = {key:-1, displayValue:'select'}
-  const priceRangeClone = [...props.values]
-  const minValues = [selectOption, ...priceRangeClone.slice(0, priceRangeClone.length - 1)];
-  const maxValues = [selectOption, ...priceRangeClone.slice(1)];
+  const discountRangeClone = [...props.values]
+  const minValues = [selectOption, ...discountRangeClone.slice(0, discountRangeClone.length - 1)];
+  const maxValues = [selectOption, ...discountRangeClone.slice(1)];
   return (
     <div className={styles.container}>
       <br/>

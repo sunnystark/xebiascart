@@ -8,12 +8,12 @@ function DiscountSelectionComponent(props) {
       value={props.selectedValue || -1}
     >
       {
-        props.values.map(priceMeta => (
+        props.values.map(discountMeta => (
           <option 
-            key={priceMeta.key} 
-            value={priceMeta.key}
+            key={discountMeta.key} 
+            value={discountMeta.key}
           >
-            {priceMeta.displayValue}
+            {discountMeta.displayValue}
           </option>
         ))
       }

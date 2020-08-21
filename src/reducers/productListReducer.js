@@ -1,5 +1,5 @@
 import { FILTER_PRODUCT_LIST } from "../actions/productActions";
-import {PRICE} from '../constants/appConst'
+import {PRICE, DISCOUNT} from '../constants/appConst'
 
 const initialState = null;
 
@@ -47,10 +47,33 @@ function getPriceFilter([minimum, maximum], list) {
     }, [])
 }
 
+function getDiscountFilter([minimum, maximum], list) {
+  let min = minimum || -1;
+  let max = maximum || -1;
+  return Object
+    .entries(list)
+    .reduce((newList, [productId, productDetails]) => {
+      let discount = productDetails.discount;
+      console.log('ashfashf', discount)
+      if((max !== -1 && min !== -1) && (discount >= min && discount <= max)){
+        return [...newList, productId]
+      }
+      if(max === -1 && min !== -1 && discount >= min){
+        return [...newList, productId]
+      }
+      if(min === -1 && max !== -1 && discount <= max){
+        return [...newList, productId]
+      }
+      return newList
+    }, [])
+}
+
 function getProductFilter(type, criteria, list){
   switch(type){
     case PRICE:
       return getPriceFilter(criteria, list)
+     case DISCOUNT:
+       return getDiscountFilter(criteria, list) 
     default:
       return Object.keys(list);
   }

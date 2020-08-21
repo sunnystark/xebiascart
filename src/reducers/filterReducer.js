@@ -8,13 +8,19 @@ import {
   REMOVE_MIN_PRICE_FROM_FILTER,
   ADD_MAX_PRICE_TO_FILTER,
   REMOVE_MAX_PRICE_FROM_FILTER,
-  RESET_APPLIED_FILTER
+  ADD_MIN_DISCOUNT_TO_FILTER,
+  REMOVE_MIN_DISCOUNT_FROM_FILTER,
+  ADD_MAX_DISCOUNT_TO_FILTER,
+  REMOVE_MAX_DISCOUNT_FROM_FILTER,
+  RESET_APPLIED_FILTER,
+
 } from "../actions/filterActions";
 
 import {
   COLOR,
   BRAND,
-  PRICE
+  PRICE,
+  DISCOUNT
 } from '../constants/appConst'
 
 export 
@@ -133,6 +139,28 @@ function removePriceFilterOrReturnSameState({state, key, position}) {
   }
   return state;
 }
+function addDiscountFilterOrReturnSameState({state, key, value, position}) {
+  let filters = state.applied_filters
+  if(isValueExitsInRange({filters, key, value, position})){
+    return state;
+  }
+  return {
+    ...state,
+    applied_filters: addRangeToFilter({filters, key, value, position})
+  }
+}
+function removeDiscountFilterOrReturnSameState({state, key, position}) {
+  let filters = state.applied_filters
+  if(isValueExitsInRange({filters, key, position})){
+    return {
+      ...state,
+      applied_filters: removeRangeToFilter({filters, key, position})
+    }
+  }
+  return state;
+}
+
+
 
 const filterReducer = (state = initialState, {type, payload}) => {
   switch (type) {
@@ -173,6 +201,32 @@ const filterReducer = (state = initialState, {type, payload}) => {
       return removePriceFilterOrReturnSameState({
         state,
         key:PRICE,
+        position:1
+      })
+      case ADD_MIN_DISCOUNT_TO_FILTER:
+      return addPriceFilterOrReturnSameState({
+        state, 
+        key:DISCOUNT, 
+        value:payload,
+        position:0
+      });
+    case REMOVE_MIN_DISCOUNT_FROM_FILTER:
+      return removeDiscountFilterOrReturnSameState({
+        state,
+        key:DISCOUNT,
+        position:0
+      })
+    case ADD_MAX_DISCOUNT_TO_FILTER:
+      return addDiscountFilterOrReturnSameState({
+        state,
+        key:DISCOUNT,
+        value:payload,
+        position: 1
+      })
+    case REMOVE_MAX_DISCOUNT_FROM_FILTER:
+      return removeDiscountFilterOrReturnSameState({
+        state,
+        key:DISCOUNT,
         position:1
       })
     case RESET_APPLIED_FILTER:

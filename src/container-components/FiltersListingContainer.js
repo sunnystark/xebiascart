@@ -3,16 +3,19 @@ import { connect } from 'react-redux';
 import ColorContainer from './ColorContainer';
 import BrandContainer from './BrandContainer';
 import PriceContainer from './PriceContainer';
+import DiscountContainer from './DiscountContainer';
 import { resetAppliedFilter } from '../actions/filterActions';
 import { filterProductList } from '../actions/productActions';
-import {BRAND, COLOUR, PRICE} from '../constants/appConst'
+import {BRAND, COLOUR, PRICE, DISCOUNT } from '../constants/appConst'
 
 import styles from './FiltersListingContainer.module.css'
 
 const mapComponent = {
   [BRAND.toUpperCase()]:BrandContainer,
   [COLOUR.toUpperCase()]:ColorContainer,
-  [PRICE.toUpperCase()]:PriceContainer
+  [PRICE.toUpperCase()]:PriceContainer,
+  [DISCOUNT.toUpperCase()]:DiscountContainer
+
 }
 
 function FiltersListing(props){
