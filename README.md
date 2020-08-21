@@ -62,8 +62,7 @@ getting filter data
 <p>$ npm run flow</p>
 
 
-Server API
-API to use
+<p>Server API</p>
 
 GET Product Listing: https://xebiascart.herokuapp.com/products
 
