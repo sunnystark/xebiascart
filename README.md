@@ -72,6 +72,8 @@ GET Product Filters: https://xebiascart.herokuapp.com/filters
 
 User Login: https://xebiascart.herokuapp.com/users?username=amigo
 
+<h2>redux Store Structure</h2> 
+
 {
   "filterable_product_list": {
     "filterable_products": {
