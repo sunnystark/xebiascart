@@ -49,17 +49,17 @@ getting filter data
 <p>Search functionality</p>
 <p>UI (hover states), loading indications.</p>
 
-Test
-$ npm test
-Debug Test
-$ npm run test:debug
-Coverage
-$ npm test -- --coverage
-Analyzing the Bundle Size
-$ npm run build
-$ npm run analyze
-Check type error
-$ npm run flow
+<h2>Test</h2>
+<p> $ npm test</p>
+<h2>Debug Test</h2>
+<p>$ npm run test:debug</p>
+<h2>Coverage</h2>
+<p>$ npm test -- --coverage</p>
+<h2>Analyzing the Bundle Size</h2>
+<p>$ npm run build</p>
+<p>$ npm run analyze</p>
+<h2>Check type error</h2>
+<p>$ npm run flow</p>
 
 
 Server API
