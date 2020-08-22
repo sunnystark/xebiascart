@@ -21,9 +21,9 @@ function HeaderContainer(props) {
         </form>
       </div>
       <div className={styles.right}>
-        <div>Welcome to User</div>
-        <div>cart</div>
-      </div>
+        <div>Welcome amigo</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Shopping_cart_icon.svg/1200px-Shopping_cart_icon.svg.png" className={styles.cartlogo} alt=" cart logo" /></div>
+         </div>
     </header>
   )
 }
